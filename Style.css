@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+
+.background {
+  position: relative;
+  background-image: url(Assests/the_netflix_login_background__canada__2024___by_logofeveryt_dh0w8qv.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.75);
+  z-index: 1;
+}
+
+.background > *:not(.overlay) {
+  position: relative;
+  z-index: 2;
+}
+
+.footer{
+    width: 80%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 8.5rem 1rem 8.3rem; 
+}
+
+.footer-img img {
+    height: 3.1rem;
+}
+
+.footer-buttons button{
+    font-size: 14px;
+    margin-right: 0.2rem;
+    font-weight: 700;
+    padding: 0.5rem 0.9rem 0.5rem 0.9rem;
+    border-radius: 5px;
+}
+
+.signOut{
+    background-color: rgb(229, 9, 20);
+    color: rgb(255, 255, 255);
+    border: none;
+    cursor: pointer;
+    transition: linear 0.2s all;
+}
+
+.signOut:hover{
+    background-color: rgb(201, 14, 24);
+}
+
+.dropDown{
+    color: rgb(255, 255, 255);
+    background-color: rgb(000, 000, 000, 0);
+    border: 1px solid rgb(255, 255, 255, 0.5);
+}
+
+.dropDown i {
+    margin-left: 0.6rem;
+}
