@@ -127,28 +127,70 @@ body {
   margin-left: 0.5rem;
 }
 
+.movie-heading {
+  width: 100%;
+}
+
 .movie-heading h2{
-  padding-left: 5rem;
-  margin-bottom: 0;
+  text-align: left;
 }
 
 .movies {
-  max-width: 100%;
   display: flex;
-  margin: 5rem;
   flex-direction: column;
-  justify-content: center;
-
+  align-items: center; 
+  padding: 1rem 3rem;
 }
 
-.movies-cards{
+.movies-cards {
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  gap: 1.5rem;
+  overflow-x: auto;         
+  justify-content: flex-start;
   align-items: center;
+  width: 100%;
+  max-width: 1200px;        
+  padding-bottom: 1rem;     
+  scrollbar-width: thin;    
 }
 
-.movies-cards img{
-  margin: 2rem;
-  height: 20rem;
+.movies-cards::-webkit-scrollbar {
+  height: 8px;
+}
+.movies-cards::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 4px;
+}
+
+.movies-cards img {
+  margin: 0;
+  height: 300px;  
+  width: 200px;
   border-radius: 10px;
+  object-fit: cover;
+}
+
+
+@media (max-width: 900px) {
+  .movies {
+    padding: 1rem;
+  }
+  .movies-cards img {
+    height: 200px;
+    width: 130px;
+  }
+}
+
+@media (max-width: 600px) {
+  .movies {
+    padding: 0.5rem;
+  }
+  .movies-cards {
+    gap: 0.7rem;
+  }
+  .movies-cards img {
+    height: 140px;
+    width: 90px;
+  }
 }
