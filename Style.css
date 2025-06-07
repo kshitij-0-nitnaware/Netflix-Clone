@@ -126,3 +126,29 @@ body {
 .sign-up-button i{
   margin-left: 0.5rem;
 }
+
+.movie-heading h2{
+  padding-left: 5rem;
+  margin-bottom: 0;
+}
+
+.movies {
+  max-width: 100%;
+  display: flex;
+  margin: 5rem;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.movies-cards{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.movies-cards img{
+  margin: 2rem;
+  height: 20rem;
+  border-radius: 10px;
+}
