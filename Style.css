@@ -169,6 +169,11 @@ body {
   width: 200px;
   border-radius: 10px;
   object-fit: cover;
+  transition: linear 0.2s all;
+}
+
+.movies-cards img:hover{
+  transform: scale(1.02);
 }
 
 
