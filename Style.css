@@ -138,21 +138,24 @@ body {
 .movies {
   display: flex;
   flex-direction: column;
-  align-items: center; 
-  padding: 1rem 3rem;
+  align-items: flex-start;
+  padding: 1rem 2rem;
+  max-width: 1300px;
+  margin: 0 auto;
 }
 
 .movies-cards {
   display: flex;
   flex-direction: row;
   gap: 1.5rem;
-  overflow-x: auto;         
-  justify-content: flex-start;
+  overflow-x: auto;
+  justify-content: center;
   align-items: center;
   width: 100%;
-  max-width: 1200px;        
-  padding-bottom: 1rem;     
-  scrollbar-width: thin;    
+  max-width: 1200px;
+  padding-bottom: 1rem;
+  scrollbar-width: thin;
+  margin: 0 auto;
 }
 
 .movies-cards::-webkit-scrollbar {
@@ -197,5 +200,330 @@ body {
   .movies-cards img {
     height: 140px;
     width: 90px;
+  }
+}
+
+.reasons-section {
+  margin: 3rem auto 0 auto;
+  max-width: 1300px;
+  padding: 0 2rem;
+}
+.reasons-title {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+.reasons-cards {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+}
+.reason-card {
+  background: linear-gradient(135deg, #231942 0%, #3a0ca3 100%);
+  color: #fff;
+  border-radius: 22px;
+  padding: 2rem 1.5rem 1.5rem 1.5rem;
+  flex: 1 1 250px;
+  min-width: 250px;
+  max-width: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  box-shadow: 0 4px 24px 0 rgba(0,0,0,0.2);
+}
+.reason-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.7rem;
+  font-weight: 700;
+}
+.reason-card p {
+  font-size: 1.1rem;
+  color: #d1c4e9;
+  margin-bottom: 2.5rem;
+}
+.reason-icon {
+  position: absolute;
+  right: 1.5rem;
+  bottom: 1.2rem;
+  font-size: 2.5rem;
+  color: #ff61c7;
+  opacity: 0.95;
+}
+@media (max-width: 900px) {
+  .reasons-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+  }
+  .reason-card {
+    max-width: 350px;
+    margin: 0 auto;
+  }
+  .reasons-section {
+    padding: 0 1rem;
+  }
+}
+
+.faq-section {
+  max-width: 1300px;
+  margin: 3rem auto 0 auto;
+  padding: 0 2rem 2rem 2rem;
+}
+.faq-title {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.faq-item {
+  background: #333;
+  border: 2px solid #111;
+  border-radius: 2px;
+  overflow: hidden;
+}
+.faq-question {
+  width: 100%;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 400;
+  text-align: left;
+  padding: 1.5rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  outline: none;
+  transition: background 0.2s;
+}
+.faq-question:hover {
+  background: #444;
+}
+.faq-icon {
+  font-size: 2rem;
+  transition: transform 0.2s;
+}
+.faq-answer {
+  display: none;
+  color: #fff;
+  background: #222;
+  font-size: 1.1rem;
+  padding: 1.5rem 2rem;
+  border-top: 1px solid #111;
+}
+.faq-item.active .faq-answer {
+  display: block;
+}
+.faq-item.active .faq-icon {
+  transform: rotate(45deg);
+}
+.faq-signup-btn {
+  margin-top: 2rem;
+  background: #e50914;
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  padding: 1rem 2.5rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.faq-signup-btn:hover {
+  background: #b0060f;
+}
+
+.site-footer {
+  background-color: #000;
+  padding: 4rem 2rem;
+  color: #737373;
+  font-size: 0.9rem;
+  margin-top: 3rem;
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer-call {
+  margin-bottom: 1.5rem;
+}
+
+.footer-call a {
+  color: #737373;
+  text-decoration: underline;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex: 1 1 200px;
+  margin-bottom: 1rem;
+}
+
+.footer-links li {
+  margin-bottom: 0.8rem;
+}
+
+.footer-links a {
+  color: #737373;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.lang-selector {
+  margin-bottom: 1.5rem;
+}
+
+.lang-btn {
+  background-color: #000;
+  color: #737373;
+  border: 1px solid #737373;
+  padding: 0.7rem 1.2rem;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.lang-btn i {
+  font-size: 1rem;
+}
+
+.copyright {
+  margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+  .footer-links {
+    flex-direction: column;
+  }
+  .reasons-section {
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .heading h1 {
+    font-size: 45px;
+  }
+  .heading p {
+    font-size: 17px;
+  }
+  .sign-up-button button {
+    font-size: 18px;
+    padding: 0.8rem 1.8rem;
+  }
+  .footer {
+    padding: 1rem 4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 14px; /* Base font size for smaller screens */
+  }
+  .heading h1 {
+    font-size: 35px;
+  }
+  .heading p {
+    font-size: 16px;
+  }
+  .sign-up-button button {
+    font-size: 16px;
+    padding: 0.7rem 1.5rem;
+  }
+  .footer {
+    flex-direction: column;
+    padding: 1rem 2rem;
+    align-items: center;
+  }
+  .footer-img {
+    margin-bottom: 1rem;
+  }
+  .footer-buttons button {
+    margin-right: 0;
+    margin-bottom: 0.5rem;
+  }
+  .dropDown, .signOut {
+    width: 100%;
+    text-align: center;
+  }
+  .movies {
+    padding: 0.5rem 1rem;
+  }
+  .reasons-title,
+  .faq-title {
+    font-size: 1.8rem;
+  }
+  .faq-question {
+    font-size: 1.2rem;
+    padding: 1rem 1.5rem;
+  }
+  .faq-answer {
+    font-size: 1rem;
+    padding: 1rem 1.5rem;
+  }
+  .faq-signup-btn {
+    font-size: 1.1rem;
+    padding: 0.8rem 2rem;
+  }
+  .site-footer {
+    padding: 3rem 1rem;
+  }
+  .footer-links ul {
+    flex-basis: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .heading h1 {
+    font-size: 28px;
+  }
+  .heading p {
+    font-size: 15px;
+  }
+  .sign-up-button button {
+    font-size: 14px;
+    padding: 0.6rem 1.2rem;
+  }
+  .reasons-title,
+  .faq-title {
+    font-size: 1.5rem;
+  }
+  .faq-question {
+    font-size: 1.1rem;
+    padding: 0.8rem 1rem;
+  }
+  .faq-answer {
+    font-size: 0.9rem;
+    padding: 0.8rem 1rem;
+  }
+  .faq-signup-btn {
+    font-size: 1rem;
+    padding: 0.7rem 1.5rem;
   }
 }
