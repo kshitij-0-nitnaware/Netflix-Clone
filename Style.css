@@ -444,7 +444,7 @@ body {
 
 @media (max-width: 768px) {
   body {
-    font-size: 14px; /* Base font size for smaller screens */
+    font-size: 14px; 
   }
   .heading h1 {
     font-size: 35px;
