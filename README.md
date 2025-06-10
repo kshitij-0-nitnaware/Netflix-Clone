@@ -7,7 +7,7 @@ This project recreates the look and feel of Netflix's official site including tr
 
 ## 🌐 Live Demo
 
-🔗 [Click here to view the live project](https://your-live-demo-link.com)
+🔗 [Click here to view the live project](https://kshitij-0-nitnaware.github.io/Netflix-Clone/)
 
 
 ---
